@@ -1,3 +1,4 @@
+"""System module."""
 import sys
 
 print("Hello World from Python")
