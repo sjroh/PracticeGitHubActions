@@ -1,3 +1,5 @@
+name: Sample settings from GitHub document
+
 on: push
 
 jobs:
