@@ -25,9 +25,15 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
+      # Get an actor
+      - name: Get an actor
+        env:
+          GITHUB_ACTOR: ${{ github.actor }}
+        run: echo "$GITHUB_ACTOR"
+
       # Run a python code
       - name: Run a python code
-        run: python pythoning.py
+        run: python pythoning.py $GITHUB_ACTOR
 
       # Run a ruby code
       - name: Run a a ruby code
